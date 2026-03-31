@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daolight — Eastern Philosophy & Daily Wisdom</title>
+    <meta name="description" content="Daily wisdom from Taoism, Buddhism, Zen, and Stoicism. 500 curated quotes, guided journeys, and beautiful share cards.">
+    <meta property="og:title" content="Daolight — Eastern Philosophy & Daily Wisdom">
+    <meta property="og:description" content="Start your day with timeless wisdom. Available on the App Store.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://daolight.app">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #e8e8e8;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem 1.5rem;
+            background: radial-gradient(ellipse at 50% 0%, rgba(180, 140, 80, 0.08) 0%, transparent 60%);
+        }
+
+        .app-icon {
+            width: 120px;
+            height: 120px;
+            border-radius: 28px;
+            margin-bottom: 2rem;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 700;
+            letter-spacing: -0.03em;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero .tagline {
+            font-size: 1.25rem;
+            color: #999;
+            margin-bottom: 2.5rem;
+            max-width: 420px;
+        }
+
+        .app-store-badge {
+            height: 54px;
+            transition: opacity 0.2s;
+        }
+
+        .app-store-badge:hover {
+            opacity: 0.8;
+        }
+
+        .coming-soon {
+            display: inline-block;
+            padding: 14px 36px;
+            border: 1.5px solid rgba(180, 140, 80, 0.5);
+            border-radius: 14px;
+            color: #c4a862;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 0.02em;
+        }
+
+        /* Features */
+        .features {
+            padding: 6rem 1.5rem;
+            max-width: 960px;
+            margin: 0 auto;
+        }
+
+        .features h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            margin-bottom: 3.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 2rem;
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 20px;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        .feature-card .icon {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            font-size: 0.95rem;
+            color: #888;
+            line-height: 1.6;
+        }
+
+        /* Quote */
+        .quote-section {
+            padding: 5rem 1.5rem;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 50%, rgba(180, 140, 80, 0.04) 0%, transparent 70%);
+        }
+
+        .quote-section blockquote {
+            font-size: 1.5rem;
+            font-style: italic;
+            font-family: Georgia, "Times New Roman", serif;
+            max-width: 600px;
+            margin: 0 auto 1rem;
+            color: #ccc;
+            line-height: 1.8;
+        }
+
+        .quote-section cite {
+            font-style: normal;
+            color: #777;
+            font-size: 1rem;
+        }
+
+        /* Privacy section */
+        .details {
+            padding: 4rem 1.5rem;
+            max-width: 640px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .details h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .details p {
+            color: #888;
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 1.5rem;
+            text-align: center;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+
+        footer p {
+            color: #555;
+            font-size: 0.85rem;
+            margin-bottom: 0.75rem;
+        }
+
+        footer a {
+            color: #777;
+            text-decoration: none;
+            margin: 0 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        footer a:hover {
+            color: #c4a862;
+        }
+
+        /* Mobile */
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2.5rem; }
+            .hero .tagline { font-size: 1.1rem; }
+            .features h2 { font-size: 1.5rem; }
+            .quote-section blockquote { font-size: 1.25rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <section class="hero">
+        <!-- Replace src with your actual app icon -->
+        <img src="icon.png" alt="Daolight App Icon" class="app-icon"
+             onerror="this.style.display='none'">
+        <h1>Daolight</h1>
+        <p class="tagline">Daily wisdom from the world's great contemplative traditions.</p>
+
+        <!-- Uncomment and update href when your app is live on the App Store -->
+        <!-- <a href="https://apps.apple.com/app/daolight/idYOUR_APP_ID">
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+                 alt="Download on the App Store" class="app-store-badge">
+        </a> -->
+        <span class="coming-soon">Coming soon to the App Store</span>
+    </section>
+
+    <section class="features">
+        <h2>Timeless wisdom, delivered simply</h2>
+        <div class="feature-grid">
+            <div class="feature-card">
+                <div class="icon">&#9788;</div>
+                <h3>Daily Curated Quotes</h3>
+                <p>Nearly 500 quotes from Taoism, Buddhism, Zen, Stoicism, and Vedanta — thoughtfully selected to ground your day.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#10024;</div>
+                <h3>Smart Recommendations</h3>
+                <p>Our knowledge graph surfaces semantically similar teachings — connections you won't find in a keyword search.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#9968;</div>
+                <h3>Guided Journeys</h3>
+                <p>Follow 7- and 14-day programs with daily teachings, contemplation practices, and reflection prompts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#9825;</div>
+                <h3>Favorites & Journal</h3>
+                <p>Save quotes that resonate. Write reflections. Build a personal library of wisdom over time.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#9645;</div>
+                <h3>Beautiful Share Cards</h3>
+                <p>Share wisdom with friends using handcrafted quote cards with multiple themes, layouts, and fonts.</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">&#9670;</div>
+                <h3>Private by Design</h3>
+                <p>No account. No tracking. No ads. Your data stays on your device. Period.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="quote-section">
+        <blockquote>&ldquo;The journey of a thousand miles begins with a single step.&rdquo;</blockquote>
+        <cite>Lao Tzu</cite>
+    </section>
+
+    <section class="details">
+        <h2>Your practice, your way</h2>
+        <p>
+            Browse by tradition, theme, or mood. Get a fresh quote on your Home Screen with the widget.
+            Set daily reminders so wisdom finds you at the right moment.
+            Everything runs on-device — beautifully fast, completely private.
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Thor Matthiasson. All rights reserved.</p>
+        <div>
+            <a href="/privacy.html">Privacy Policy</a>
+            <a href="/terms.html">Terms of Use</a>
+            <a href="mailto:support@daolight.app">Contact</a>
+        </div>
+    </footer>
+
+</body>
+</html>
